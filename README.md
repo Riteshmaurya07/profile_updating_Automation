@@ -29,8 +29,8 @@ Every run, the script toggles a trailing period (`.`) at the end of your **Profi
 
 ### 1. Clone & Install Dependencies
 ```powershell
-git clone https://github.com/ankitbaghel01/naukri_update.git
-cd naukri_update
+git clone https://github.com/Riteshmaurya07/profile_updating_Automation
+cd profile_updating_Automation
 npm install
 ```
 

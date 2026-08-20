@@ -29,8 +29,8 @@ Every run, the script toggles a trailing period (`.`) at the end of your **Profi
 
 ### 1. Clone & Install Dependencies
 ```powershell
-git clone https://github.com/ankitbaghel01/naukri_update.git
-cd naukri_update
+git clone https://github.com/Riteshmaurya07/profile_updating_Automation
+cd profile_updating_Automation
 npm install
 ```
 
@@ -74,7 +74,7 @@ To keep your profile safe under Naukri's bot detection guidelines, it is recomme
 Run this command once in PowerShell:
 
 ```powershell
-$repo = "D:\code\Naukari_automation\naukri_update"
+$repo = "D:\yourPath\profile_updating_Automation"
 $action  = New-ScheduledTaskAction -Execute "node.exe" -Argument "`"$repo\naukri-profile-refresh.js`"" -WorkingDirectory $repo
 $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Hours 4)
 Register-ScheduledTask -TaskName "NaukriProfileRefresh" -Action $action -Trigger $trigger -Settings (New-ScheduledTaskSettingsSet -StartWhenAvailable) -Force

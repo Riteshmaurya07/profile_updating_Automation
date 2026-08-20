@@ -74,7 +74,7 @@ To keep your profile safe under Naukri's bot detection guidelines, it is recomme
 Run this command once in PowerShell:
 
 ```powershell
-$repo = "D:\code\Naukari_automation\naukri_update"
+$repo = "D:\yourPath\profile_updating_Automation"
 $action  = New-ScheduledTaskAction -Execute "node.exe" -Argument "`"$repo\naukri-profile-refresh.js`"" -WorkingDirectory $repo
 $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Hours 4)
 Register-ScheduledTask -TaskName "NaukriProfileRefresh" -Action $action -Trigger $trigger -Settings (New-ScheduledTaskSettingsSet -StartWhenAvailable) -Force
